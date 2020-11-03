@@ -77,7 +77,7 @@ const App = () => {
                   id="myRange"
                />
             </div>
-            <div style={{ margin: 'auto' }}>
+            <div style={{ margin: 'auto', display: 'inline-block' }}>
                {colors.map((color) => {
                   if (color === 'white') {
                      let style = {
