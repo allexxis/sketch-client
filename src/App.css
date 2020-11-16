@@ -48,3 +48,8 @@
    border-color: black;
    border-radius: 5px;
 }
+.Timer {
+   height: 40px;
+   margin: auto;
+   background-color: blue;
+}
