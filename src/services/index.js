@@ -11,7 +11,19 @@ const broadcastEvent=({event,payload})=>{
     }
    
 }
-
+const getRooms = async()=>{
+    const result = await fetch('https://7baf5e61b0f7.ngrok.io/rooms',{
+        method:'GET',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+       
+    }).then(res=>res.json()).catch(err=>{
+        throw err
+    });
+    return result.rooms
+}
 export  {
-    broadcastEvent
+    broadcastEvent,
+    getRooms
 }
