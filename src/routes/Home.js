@@ -22,7 +22,7 @@ const Home =({username,setUsername})=>{
         if(username){
             setCreated(true)
         }
-    },[username])
+    },[])
     return (
         <div>
             <h1 className='Username-label'>{username}</h1>
